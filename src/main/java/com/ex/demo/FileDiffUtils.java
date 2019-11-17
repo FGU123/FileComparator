@@ -26,8 +26,8 @@ public class FileDiffUtils {
  
     public static Map<String, List<String>> calculateIncrements(File refDir, File currentDir) throws IOException {
  
-        Assert.isTrue(refDir.isDirectory(), "ref must be a directory");
-        Assert.isTrue(currentDir.isDirectory(), "current must be a directory");
+        Assert.isTrue(refDir.isDirectory(), "ref must be a valid directory");
+        Assert.isTrue(currentDir.isDirectory(), "current must be a valid directory");
  
         List<String> changes = new ArrayList<String>();
         List<String> deletions = new ArrayList<String>();

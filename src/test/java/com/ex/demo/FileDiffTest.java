@@ -12,8 +12,8 @@ public class FileDiffTest {
 
 	public static void main(String[] args) throws IOException {
 
-		File refDir = new File("C:\\Users\\Administrator\\Desktop");
-		File currentDir = new File("C:\\\\Users\\\\Administrator\\\\Desktop");
+		File refDir = new File("C:\\Users\\Administrator\\Desktop\\v1.0");
+		File currentDir = new File("C:\\\\Users\\\\Administrator\\\\Desktop\\\\v1.1");
 
 		Map<String, List<String>> increments = FileDiffUtils.calculateIncrements(refDir, currentDir);
 		MapUtil.defaultIfEmpty(increments, Collections.emptyMap()).forEach((k, v) -> {
